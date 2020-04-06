@@ -1,0 +1,20 @@
+{
+    "stream": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-stream-frontend-stream-154751-authRole",
+            "UnauthRoleArn": "arn:aws:iam::228802818628:role/amplify-stream-frontend-stream-154751-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::228802818628:role/amplify-stream-frontend-stream-154751-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "amplify-stream-frontend-stream-154751-deployment",
+            "UnauthRoleName": "amplify-stream-frontend-stream-154751-unauthRole",
+            "StackName": "amplify-stream-frontend-stream-154751",
+            "StackId": "arn:aws:cloudformation:eu-west-1:228802818628:stack/amplify-stream-frontend-stream-154751/37eea5b0-7356-11ea-ab51-0a2c3f6a2a32",
+            "AmplifyAppId": "d1w90bt11zibfu"
+        },
+        "categories": {
+            "auth": {
+                "streamfrontend3280f277": {}
+            }
+        }
+    }
+}

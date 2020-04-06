@@ -1,0 +1,71 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-stream-frontend-stream-154751-authRole",
+            "UnauthRoleArn": "arn:aws:iam::228802818628:role/amplify-stream-frontend-stream-154751-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::228802818628:role/amplify-stream-frontend-stream-154751-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "amplify-stream-frontend-stream-154751-deployment",
+            "UnauthRoleName": "amplify-stream-frontend-stream-154751-unauthRole",
+            "StackName": "amplify-stream-frontend-stream-154751",
+            "StackId": "arn:aws:cloudformation:eu-west-1:228802818628:stack/amplify-stream-frontend-stream-154751/37eea5b0-7356-11ea-ab51-0a2c3f6a2a32",
+            "AmplifyAppId": "d1w90bt11zibfu"
+        }
+    },
+    "auth": {
+        "streamfrontend3280f277": {
+            "service": "Cognito",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": [],
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/amplify-stream-frontend-stream-154751-deployment/amplify-cfn-templates/auth/streamfrontend3280f277-cloudformation-template.yml",
+                "logicalId": "authstreamfrontend3280f277"
+            },
+            "lastPushTimeStamp": "2020-04-06T15:45:49.014Z",
+            "output": {
+                "AppClientSecret": "1s2cbgqg0396jh15e2i39u3floa0gucbiuaahe09hn8cnp2m5eh8",
+                "UserPoolId": "eu-west-1_Tw7W5AmAS",
+                "AppClientIDWeb": "24furps1iepkut3ajpo7firfg7",
+                "AppClientID": "6vn8ncrf1r1e7ne99emsb1b97r",
+                "IdentityPoolId": "eu-west-1:06788ecb-7142-4f13-9a21-927b7cb67151",
+                "IdentityPoolName": "streamfrontend3280f277_identitypool_3280f277__stream",
+                "UserPoolName": "streamfrontend3280f277_userpool_3280f277"
+            },
+            "lastPushDirHash": "+sZkxLO+F1PhYVI9k6Q/9MQuy50="
+        }
+    },
+    "storage": {
+        "storage": {
+            "service": "S3",
+            "providerPlugin": "awscloudformation",
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/amplify-stream-frontend-stream-154751-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+                "logicalId": "storagestorage"
+            },
+            "lastPushTimeStamp": "2020-04-06T15:45:49.014Z",
+            "output": {
+                "BucketName": "streamstoragestream-stream",
+                "Region": "eu-west-1"
+            },
+            "lastPushDirHash": "gJUsGJu9qxyojjKq74lNEi0f8ok="
+        }
+    },
+    "hosting": {
+        "S3AndCloudFront": {
+            "service": "S3AndCloudFront",
+            "providerPlugin": "awscloudformation",
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/amplify-stream-frontend-stream-154751-deployment/amplify-cfn-templates/hosting/template.json",
+                "logicalId": "hostingS3AndCloudFront"
+            },
+            "lastPushTimeStamp": "2020-04-06T15:45:49.015Z",
+            "output": {
+                "S3BucketSecureURL": "https://hostingbucket-stream-stream.s3.amazonaws.com",
+                "WebsiteURL": "http://hostingbucket-stream-stream.s3-website-eu-west-1.amazonaws.com",
+                "Region": "eu-west-1",
+                "HostingBucketName": "hostingbucket-stream-stream"
+            },
+            "lastPushDirHash": "Rnhnn2hgQATZTS4aHhm19rxEDiU="
+        }
+    }
+}

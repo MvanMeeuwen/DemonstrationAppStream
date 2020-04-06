@@ -1,0 +1,13 @@
+{
+  "version": "2.0",
+  "app_name": "pdf2jpeg",
+  "lambda_timeout": 400,
+  "lambda_memory_size": 1024,
+  "stages": {
+    "dev": {
+    "api_gateway_stage": "api",
+      "autogen_policy": false,
+      "iam_policy_file": "iam_policy.json"
+    }
+  }
+}
