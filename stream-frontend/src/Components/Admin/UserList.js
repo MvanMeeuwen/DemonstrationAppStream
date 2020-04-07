@@ -6,6 +6,12 @@ const { Title } = Typography;
 
 
 
+const fakeuserlist = [
+  {username: "Neil", email: "neil.marcovitz@bci.ca", access_level: 'Administrator'},
+  {username: "Nyomi", email: "nyomi.beatty@bci.ca", access_level: 'Full'},
+  {username: "Lance", email: "lance.mayes@bci.ca", access_level: 'Full'}
+]
+
 
 const columns = [
     {
@@ -52,7 +58,7 @@ return <>
 
         <Title level = {4}>  List of users </Title>
 
-        <Table dataSource={user_list} columns={columns} />
+        <Table dataSource={fakeuserlist} columns={columns} />
 
         </div>
         </>

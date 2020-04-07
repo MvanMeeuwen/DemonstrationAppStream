@@ -193,9 +193,7 @@ const NoticeManagement = () => {
         yearschildren.push(<Option key={year}>{year}</Option>)
     })
 
-    const handleRowClick = (record) => {
-        console.log(record.key)
-    }
+   
 
     return <>
         <AppLayout>
