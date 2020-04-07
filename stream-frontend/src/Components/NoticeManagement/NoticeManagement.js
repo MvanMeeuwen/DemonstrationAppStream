@@ -3,7 +3,7 @@ import { Button, Select, Divider, Typography, Table, Checkbox} from 'antd';
 import { AppContext } from '../Context';
 import styled from 'styled-components';
 import moment from 'moment'
-import { BrowserRouter as Router, Route, Link  } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, useHistory} from "react-router-dom";
 import { filter } from 'lodash'
 import ReactExport from "react-data-export";
 
@@ -79,12 +79,6 @@ const columns = [
 
                 if (record.document_type == "Payment") {
                     return <>
-                        <span>
-                        <Link to= {{pathname: '/document', param: record.unique_id}}>
-                                Review                       
-                        </Link>
-                        </span>
-                    <br/>
                     <span>  
                         <Link >
                             Initiate payment                       
@@ -93,27 +87,13 @@ const columns = [
                 </>
             } else if (record.document_type == "Refund") {
                 return <>
-                <span>
-                <Link to= {{pathname: '/document', param: record.unique_id}}>
-                        Review                       
-                </Link>
-                </span>
-            <br/>
             <span>  
                 <Link >
-                    Create account record                     
+                    Create accounting record                     
                     </Link>
             </span >
         </>
-            } else {
-                return (
-                    <span>
-                <Link to= {{pathname: '/document', param: record.unique_id}}>
-                        Review                       
-                </Link>
-                </span>
-                )
-            }
+            } 
         }
                  
         
@@ -123,6 +103,8 @@ const columns = [
 
 
 const NoticeManagement = () => {
+    let history = useHistory();
+
     const data = useContext(AppContext)
     const documents = data['ledger']
     const entities = data['entities_list']
@@ -211,6 +193,9 @@ const NoticeManagement = () => {
         yearschildren.push(<Option key={year}>{year}</Option>)
     })
 
+    const handleRowClick = (record) => {
+        console.log(record.key)
+    }
 
     return <>
         <AppLayout>
@@ -272,6 +257,10 @@ const NoticeManagement = () => {
             <Table   
                 dataSource={documents_exported} 
                 columns={columns} 
+                onRow = {record =>({
+                    onClick:(record)=>
+                            history.push("/document") 
+                })}
                 />
 
 
