@@ -257,9 +257,10 @@ const NoticeManagement = () => {
             <Table   
                 dataSource={documents_exported} 
                 columns={columns} 
-                onRow = {record =>({
-                    onClick:(record)=>
-                            history.push("/document") 
+                onRow={(record) => ({
+                    onClick: () => { 
+                        history.push("/document/" + record.unique_id) 
+                    }
                 })}
                 />
 

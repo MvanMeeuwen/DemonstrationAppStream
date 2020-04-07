@@ -55,7 +55,7 @@ Amplify.configure({
                 <Route exact path='/backlog'          component={Backlog} />
                 <Route exact path='/confirmation'     component={Confirmation} />
                 <Route exact path='/management'       component={NoticeManagement} />
-                <Route exact path="/document"         component ={Document} />
+                <Route path="/document"         component ={Document} />
                 <Route exact path="/dashboard"        component ={Dashboard} />
                 <Route exact path='/admin'            component={Admin} />
               </Content>

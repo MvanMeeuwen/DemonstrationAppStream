@@ -36,7 +36,8 @@ const AppLayout = styled.div`
 
 
 const Document = (props) => {
-    const unique_id = props.location.param
+    const unique_id = props.location.pathname.split("/")[2]
+    //const unique_id = props.location.param
 
     console.log(unique_id)
     const data = useContext(AppContext)
@@ -46,7 +47,7 @@ const Document = (props) => {
     const temp_id = "00065925-46d0-4e2d-a39d-11cc72e7e728"
 
     const specific_doc = filter(docData, function(o){
-        return o.unique_id == temp_id;
+        return o.unique_id == unique_id;
     })
 
 
