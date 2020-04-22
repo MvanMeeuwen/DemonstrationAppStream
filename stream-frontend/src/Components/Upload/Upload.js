@@ -29,8 +29,8 @@ const Upload = () => {
         let customer = authcontext.attributes['custom:customer']
         acceptedFiles.forEach((file) => {
           let uuid = uuidv4()
-          //let filename = username +  "_" + customer +  "_" + uuid + ".pdf"
-          let filename = file.name
+          let filename = username +  "_" + customer +  "_" + uuid + ".pdf"
+          //let filename = file.name
           const reader = new FileReader()
           reader.onabort = () => console.log('file reading was aborted')
           reader.onerror = () => console.log('file reading has failed')

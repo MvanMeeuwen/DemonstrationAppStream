@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81082327-5252-4ec1-8afb-5c63b14264a0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/stream-frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/stream-frontend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stream-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/stream-frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stream-frontend/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/stream-frontend/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stream-frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/stream-frontend/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stream-frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/stream-frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stream-frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/stream-frontend/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon-textract-serverless-large-scale-document-processing/src/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/amazon-textract-serverless-large-scale-document-processing/src/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf2jpeg/.chalice/deployed/dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/pdf2jpeg/.chalice/deployed/dev.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf2jpeg/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/pdf2jpeg/app.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +26,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/stream-frontend" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1YhlSiv38cAdS9qqZkqT4gZ4g3S" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -120,6 +119,14 @@
       <workItem from="1585553986035" duration="10441000" />
       <workItem from="1585652397336" duration="12849000" />
       <workItem from="1585753281199" duration="2127000" />
+      <workItem from="1586866409130" duration="879000" />
+      <workItem from="1586945640474" duration="4521000" />
+      <workItem from="1587392983430" duration="2863000" />
+      <workItem from="1587447561810" duration="677000" />
+      <workItem from="1587471767953" duration="830000" />
+      <workItem from="1587476622695" duration="104000" />
+      <workItem from="1587482249583" duration="805000" />
+      <workItem from="1587489215590" duration="643000" />
     </task>
     <servers />
   </component>

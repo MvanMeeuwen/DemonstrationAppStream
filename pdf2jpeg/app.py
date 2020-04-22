@@ -1,5 +1,7 @@
+## chalice deploy --profile production
+
 from chalice import Chalice
-import tempfile
+cd
 import boto3
 from botocore.exceptions import ClientError
 from PIL import Image
@@ -8,18 +10,19 @@ from pdf2image import convert_from_path
 
 app = Chalice(app_name='pdf2jpeg')
 
-bucket_name = "streamstoragestream-stream"
+
+bucket_name = "noticelabel-label"
 poppler_path = "lib/poppler-utils/usr/bin"
 fmt = "jpeg"
 format = 'JPEG'
 
 s3_client = boto3.client('s3')
+s3_resource = boto3.resource('s3')
 bucket_write = boto3.resource('s3').Bucket(bucket_name)
 
-@app.on_s3_event(bucket = "streamstoragestream-stream")
+@app.on_s3_event(bucket = bucket_name)
 def convert_pdf_jpeg(event):
     event_key = event.key
-    print('event_key is', event_key)
     with tempfile.TemporaryDirectory() as temp_dir:
         file_name = temp_dir + "/test"
         s3_client.download_file(event.bucket, event_key, file_name)

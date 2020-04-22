@@ -21,7 +21,7 @@
                 "s3TemplateURL": "https://s3.amazonaws.com/amplify-stream-frontend-stream-154751-deployment/amplify-cfn-templates/auth/streamfrontend3280f277-cloudformation-template.yml",
                 "logicalId": "authstreamfrontend3280f277"
             },
-            "lastPushTimeStamp": "2020-04-07T06:43:24.776Z",
+            "lastPushTimeStamp": "2020-04-15T09:56:48.835Z",
             "output": {
                 "AppClientSecret": "1s2cbgqg0396jh15e2i39u3floa0gucbiuaahe09hn8cnp2m5eh8",
                 "UserPoolId": "eu-west-1_Tw7W5AmAS",
@@ -42,7 +42,7 @@
                 "s3TemplateURL": "https://s3.amazonaws.com/amplify-stream-frontend-stream-154751-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
                 "logicalId": "storagestorage"
             },
-            "lastPushTimeStamp": "2020-04-07T06:43:24.777Z",
+            "lastPushTimeStamp": "2020-04-15T09:56:48.836Z",
             "output": {
                 "BucketName": "streamstoragestream-stream",
                 "Region": "eu-west-1"
@@ -58,7 +58,7 @@
                 "s3TemplateURL": "https://s3.amazonaws.com/amplify-stream-frontend-stream-154751-deployment/amplify-cfn-templates/hosting/template.json",
                 "logicalId": "hostingS3AndCloudFront"
             },
-            "lastPushTimeStamp": "2020-04-07T06:43:24.778Z",
+            "lastPushTimeStamp": "2020-04-15T09:56:48.837Z",
             "output": {
                 "S3BucketSecureURL": "https://hostingbucket-stream-stream.s3.amazonaws.com",
                 "WebsiteURL": "http://hostingbucket-stream-stream.s3-website-eu-west-1.amazonaws.com",

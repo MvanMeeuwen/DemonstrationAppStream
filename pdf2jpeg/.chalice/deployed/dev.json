@@ -1,23 +1,5 @@
 {
-  "resources": [
-    {
-      "name": "convert_pdf_jpeg_role",
-      "resource_type": "iam_role",
-      "role_arn": "arn:aws:iam::228802818628:role/pdf2jpeg-dev-convert_pdf_jpeg",
-      "role_name": "pdf2jpeg-dev-convert_pdf_jpeg"
-    },
-    {
-      "name": "convert_pdf_jpeg",
-      "resource_type": "lambda_function",
-      "lambda_arn": "arn:aws:lambda:eu-west-1:228802818628:function:pdf2jpeg-dev-convert_pdf_jpeg"
-    },
-    {
-      "name": "convert_pdf_jpeg-s3event",
-      "resource_type": "s3_event",
-      "bucket": "streamstoragestream-stream",
-      "lambda_arn": "arn:aws:lambda:eu-west-1:228802818628:function:pdf2jpeg-dev-convert_pdf_jpeg"
-    }
-  ],
+  "resources": [],
   "schema_version": "2.0",
   "backend": "api"
 }

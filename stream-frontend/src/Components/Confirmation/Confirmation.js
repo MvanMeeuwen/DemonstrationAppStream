@@ -4,7 +4,7 @@ import { map, without, filter} from 'lodash';
 import { Storage } from 'aws-amplify'
 import { Form, Input, Button, Select, message, Typography, AutoComplete, Row, Col, Checkbox, Progress, Result} from 'antd';
 import styled from 'styled-components';
-import { CheckOutlined, RollbackOutlined} from '@ant-design/icons';
+import { CheckOutlined, RollbackOutlined, ExclamationOutlined} from '@ant-design/icons';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
@@ -40,7 +40,7 @@ const Confirmation = () => {
     const entities_list = data['entities_list']
     const [count, setCount] = useState(0)
     const [image, setImage] = useState(null)
-
+     
     const doc_unique_ids = []
     docData.map(notice => {
         doc_unique_ids.push(notice.unique_id)
@@ -51,18 +51,18 @@ const Confirmation = () => {
         .then(data => setImage(data))
         .catch(err => console.log(err))
         }
-    
-    useEffect(() => {
-        fetchData();
-      }, [count]);
-    
-    
+
+        useEffect(() => {
+            fetchData();
+          }, [count]);
+        
+
     
     const data_elements = ["TAX YEAR", "NOTICE DATE", "AMOUNT", "NOTICE NUMBER",  "DUE DATE"]
 
     const initialValues = docData[count]
     
-    
+    console.log(doc_unique_ids[count])
     
     let keys = Object.keys(initialValues)
     let values = Object.values(initialValues)
@@ -315,6 +315,8 @@ form_list.push(id_field)
                             </Col>
                         </Row> 
                     </Form>
+
+                 
             </div>
         </AppLayout>
 

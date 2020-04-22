@@ -20,7 +20,7 @@ const Backlog = () => {
 
   const newData = contextData['demo']['Items']
   
-  
+      
     var state_grouping = groupBy(newData, function(n) {
       return n.state;
     });
