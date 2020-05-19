@@ -1,1 +1,3 @@
 venv/
+stream-frontend/build/
+stream-frontend/node_modules/
