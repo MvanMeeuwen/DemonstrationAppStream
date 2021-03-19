@@ -9,7 +9,7 @@ docutils==0.15.2
 enum-compat==0.0.3
 jmespath==0.9.5
 pdf2image==1.12.1
-Pillow==7.0.0
+Pillow==8.1.1
 pyasn1==0.4.8
 python-dateutil==2.8.1
 PyYAML==5.3.1
